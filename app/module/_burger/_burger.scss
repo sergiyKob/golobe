@@ -1,0 +1,61 @@
+.burger {
+    display: none;
+
+    @include mq("tablet-lg") {
+        display: block;
+        position: relative;
+        width: 44px;
+        height: 44px;
+        right: 5px;
+        border-radius: 10%;
+        z-index: 2;
+        &:focus {
+            box-shadow: 0px 0px 0px 2px #1e1b1b;
+        }
+        &:active {
+            background-color: rgba(255, 122, 80, 0.1);
+        }
+
+        &__line {
+            position: absolute;
+            background-color: #1e1b1b;
+            width: 30px;
+            height: 2px;
+            top: 20px;
+            right: 7px;
+            transition: transform 0.3s;
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                background-color: #1e1b1b;
+                width: 30px;
+                height: 2px;
+                right: 0;
+                transition: all 0.3s;
+            }
+            &::before {
+                top: 10px;
+            }
+            &::after {
+                bottom: 10px;
+            }
+        }
+        &.active .burger__line {
+            background-color: transparent;
+        }
+        &.active .burger__line::before {
+            transform: rotate(-45deg);
+            top: 0;
+        }
+
+        &.active .burger__line::after {
+            transform: rotate(45deg);
+            bottom: 0;
+        }
+    }
+}
+
+
+
