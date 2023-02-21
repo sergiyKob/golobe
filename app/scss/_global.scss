@@ -9,7 +9,7 @@ body {
 
     font-weight: $font-weight;
     background-color: $background-color;
-    color: $dark;
+    color: $blackish-green;
     font-size: $font-size;
     line-height: $line-height;
     height: 100%;
@@ -78,6 +78,7 @@ body {
     &--black {
         background-color: $blackish-green;
         color: $white;
+        font-weight: 600;
 
         &:hover {
             background-color: $blackish-green-85;

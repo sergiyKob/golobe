@@ -1,0 +1,83 @@
+.footer {
+    background-color: $mint-green;
+    padding: 218px 0 64px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        display: block;
+        margin-bottom: 24px;
+    }
+
+    &__left {
+        margin-right: 10px;
+    }
+}
+
+.social {
+    display: flex;
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 12px;
+        }
+    }
+    &__link {
+    }
+
+    &__link-icon {
+        fill: $blackish-green;
+        transition: opacity 0.3s;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 0.5;
+        }
+    }
+}
+
+.footer-nav {
+    width: 79%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__column {
+        &:not(:last-child) {
+            margin-right: 5px;
+        }
+    }
+
+    &__title {
+        font-family: "TradeGothic", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    &__list {
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+
+    &__link {
+        color: $blackish-green-70;
+        font-weight: 500;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom 0.2s;
+
+        &:hover {
+            border-bottom: 1px solid $blackish-green-70;
+        }
+    }
+}

@@ -3,15 +3,12 @@
 @import "vars";
 @import "libs";
 @import "mixin";
-@import 'media';
+@import "media";
 @import "global";
 
 @import "../module/_header-default/_header-default";
 
+@import "../module/_subscribe/_subscribe";
 @import "../module/_footer/_footer";
 
 @import "../module/_burger/_burger";
-
-
-
-
