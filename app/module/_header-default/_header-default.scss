@@ -1,0 +1,61 @@
+.header-default {
+    background-color: $white;
+    box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);
+    font-weight: 600;
+    padding: 21px 0;
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__links {
+        display: flex;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        color: $blackish-green;
+        position: relative;
+        transition: opacity 0.3s;
+
+        &:not(:last-child) {
+            margin-right: 32px;
+        }
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 0.5;
+        }
+
+        &--active::before {
+            @include pseudo;
+            background-color: $mint-green;
+            width: 100%;
+            height: 5px;
+            left: 0;
+            bottom: -34px;
+        }
+    }
+
+    &__link-icon {
+        fill: $blackish-green;
+        margin-right: 4px;
+    }
+
+    &__logo {
+    }
+
+    &__actions {
+    }
+
+    &__btn {
+        border-radius: 8px;
+        padding: 16px 24px;
+    }
+}

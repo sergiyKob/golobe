@@ -1,51 +1,106 @@
 html {
-  height: 100%;
+    height: 100%;
 }
 
 body {
-  height: 100%;
-  background-color: $background-color;
-  color: $dark;
-  font-size: $font-size;
-  line-height: $line-height;
-  overflow-x: hidden;
+    font-family: "Montserrat", sans-serif;
+
+    //   font-family: 'TradeGothic', sans-serif;
+
+    font-weight: $font-weight;
+    background-color: $background-color;
+    color: $dark;
+    font-size: $font-size;
+    line-height: $line-height;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 .main {
-  flex: 1 0 auto;
+    flex: 1 0 auto;
 }
 
 .footer {
-  flex: 0 0 auto;
+    flex: 0 0 auto;
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .lock {
-  overflow: hidden;
+    overflow: hidden;
 }
 
+.logo {
+    transition: opacity 0.3s;
 
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:active {
+        opacity: 0.5;
+    }
+
+    &__img {
+    }
+}
+
+.btn {
+    display: inline-block;
+    color: $blackish-green;
+    border-radius: 4px;
+    padding: 16px;
+    transition: background-color 0.3s;
+
+    &--black {
+        background-color: $blackish-green;
+        color: $white;
+
+        &:hover {
+            background-color: $blackish-green-85;
+        }
+
+        &:active {
+            background-color: $blackish-green-70;
+        }
+    }
+
+    &--transparent {
+        background-color: transparent;
+        border: 1px solid transparent;
+        padding: 15px;
+        border-radius: 8px;
+        transition: border 0.3s;
+
+        &:hover {
+            border: 1px solid $blackish-green;
+        }
+
+        &:active {
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+    }
+}

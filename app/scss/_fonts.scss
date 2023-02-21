@@ -1,4 +1,5 @@
 
+
 //  Шрифти  //
 
 @mixin font-face($font-family, $url, $weight, $style) {
@@ -12,9 +13,11 @@
     }
 }
 
-@include font-face("Rubik", "../fonts/Rubik-LightItalic", 300, italic);
-@include font-face("Rubik", "../fonts/Rubik-Light", 300, normal);
-@include font-face("Rubik", "../fonts/Rubik-Regular", 400, normal);
-@include font-face("Rubik", "../fonts/Rubik-Medium", 500, normal);
-@include font-face("Rubik", "../fonts/Rubik-SemiBold", 600, normal);
+@include font-face("Montserrat", "../fonts/Montserrat-Regular", 400, normal);
+@include font-face("Montserrat", "../fonts/Montserrat-Medium", 500, normal);
+@include font-face("Montserrat", "../fonts/Montserrat-SemiBold", 600, normal);
+@include font-face("Montserrat", "../fonts/Montserrat-Bold", 700, normal);
 
+
+@include font-face("TradeGothic", "../fonts/TradeGothicLT-Extended", 400, normal);
+@include font-face("TradeGothic", "../fonts/TradeGothicLT-BoldExtended", 700, normal);
