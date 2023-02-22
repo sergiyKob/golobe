@@ -3,6 +3,13 @@
     box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);
     font-weight: 600;
     padding: 21px 0;
+    color: $blackish-green;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
 
     &__nav {
         display: flex;
@@ -17,7 +24,6 @@
     &__link {
         display: flex;
         align-items: center;
-        color: $blackish-green;
         position: relative;
         transition: opacity 0.3s;
 
@@ -57,5 +63,26 @@
     &__btn {
         border-radius: 8px;
         padding: 16px 24px;
+    }
+}
+
+.header-main {
+    color: $white;
+    background-color: transparent;
+    box-shadow: none;
+
+    &__link-icon {
+        fill: $white;
+    }
+
+    &__btn {
+
+        &:hover {
+            border: 1px solid $white;
+        }
+
+        &:active {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
     }
 }

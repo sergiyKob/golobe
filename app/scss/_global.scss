@@ -34,6 +34,10 @@ body {
     max-width: 1260px;
     margin: 0 auto;
     padding: 0 15px;
+
+    &--main {
+        max-width: 1340px;
+    }
 }
 
 .sr-only {
@@ -89,9 +93,23 @@ body {
         }
     }
 
+    &--white {
+        color: $blackish-green;
+        background-color: $white;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.75);
+        }
+
+        &:active {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+    }
+
     &--transparent {
         background-color: transparent;
         border: 1px solid transparent;
+        color: inherit;
         padding: 15px;
         border-radius: 8px;
         transition: border 0.3s;
@@ -103,5 +121,9 @@ body {
         &:active {
             background-color: rgba(0, 0, 0, 0.05);
         }
+    }
+
+    &--mint-green {
+        background-color: $mint-green;
     }
 }

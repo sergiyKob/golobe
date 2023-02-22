@@ -6,9 +6,12 @@
 @import "media";
 @import "global";
 
+
 @import "../module/_header-default/_header-default";
+@import "../module/_header-fixed/_header-fixed";
+@import "../module/_burger/_burger";
+@import "../module/_hero-main/_hero-main";
 
 @import "../module/_subscribe/_subscribe";
 @import "../module/_footer/_footer";
 
-@import "../module/_burger/_burger";

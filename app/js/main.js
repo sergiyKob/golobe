@@ -1,3 +1,4 @@
+
 $(function () {
 
   //  burger menu  //
@@ -17,24 +18,24 @@ $(function () {
 
   //  slider revews  //
 
-  $('.reviews__slider').slick({
-    prevArrow: '<button type="button" class="slick-prev"><svg class="slick-arrow slick-arrow-prev "><use xlink: href = "images/sprite.svg#arrow-left"></use></svg></button>',
+//   $('.reviews__slider').slick({
+//     prevArrow: '<button type="button" class="slick-prev"><svg class="slick-arrow slick-arrow-prev "><use xlink: href = "images/sprite.svg#arrow-left"></use></svg></button>',
 
-    nextArrow: '<button type="button" class="slick-next"><svg class="slick-arrow slick-arrow-next"><use xlink: href = "images/sprite.svg#arrow-left"></use></svg ></button>',
-    dots: true,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false
-        }
-      }
-    ]
-  });
+//     nextArrow: '<button type="button" class="slick-next"><svg class="slick-arrow slick-arrow-next"><use xlink: href = "images/sprite.svg#arrow-left"></use></svg ></button>',
+//     dots: true,
+//     slidesToShow: 2,
+//     slidesToScroll: 1,
+//     responsive: [
+//       {
+//         breakpoint: 992,
+//         settings: {
+//           slidesToShow: 1,
+//           slidesToScroll: 1,
+//           arrows: false
+//         }
+//       }
+//     ]
+//   });
 
 
 
@@ -54,14 +55,14 @@ $(function () {
 
 
 
-  //  fixed header  //
+  //   header-fixed  //
 
   $(window).scroll(function () {
-    var menu = $('.menu');
+    var menu = $('.header-main');
     if ($(this).scrollTop() > 1) {
-      menu.addClass('menu-fixed');
+      menu.addClass('header-fixed');
     } else {
-      menu.removeClass('menu-fixed');
+      menu.removeClass('header-fixed');
     }
   });
 
